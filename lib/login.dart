@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget{
               height: 10,
             ),
             const Text(
-              "M-Logistik",
+              "",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w100,
@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget{
               height: 100,
             ),
             const Text(
-              "Hello!",
+              "",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w800,
@@ -42,17 +42,18 @@ class LoginScreen extends StatelessWidget{
               height: 10,
             ),
             const Text(
-              "Selamat Datang Di M-Logistik",
+              "Selamat Datang",
               style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w800,
+                fontSize: 50,
+                fontFamily: 'Averia Serif Libre',
+                fontWeight: FontWeight.w500,
                 color: Colors.black),
               ),
             const SizedBox(
               height: 100,
             ),
               Container(
-                height: 350,
+                height: MediaQuery.of(context).size.height,
                 width: double.infinity,
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -89,7 +90,7 @@ class LoginScreen extends StatelessWidget{
                   ),),
                   const SizedBox(height: 10,),
                   Container(
-                  height : 50,
+                  height: MediaQuery.of(context).size.height *0.07,
                   width :double.infinity,
                   padding:EdgeInsets.all(16),
                   decoration: BoxDecoration(
@@ -131,7 +132,7 @@ class LoginScreen extends StatelessWidget{
                   ),),
                 const SizedBox(height: 10,),
                 Container(
-                  height: 50,
+                  height: MediaQuery.of(context).size.height *0.07,
                   width: double.infinity,
                   padding: EdgeInsets.all(16),
                   decoration: BoxDecoration(

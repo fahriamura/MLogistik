@@ -46,7 +46,7 @@ class _SuratPengajuanPageState extends State<SuratPengajuanPage> {
                     width: 0,
                   ) 
                 ),
-                children : createRows(surat)
+                children : createRows(surat, "Tanggal Pengajuan", "Topik Surat Pengajuan","Status")
               ),
               )
             ),

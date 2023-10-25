@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:logistik/dashboards.dart';
+import 'package:logistik/pengiriman_laporan.dart';
 import 'package:logistik/surat_pengajuan_page.dart';
 class dashboard extends StatelessWidget{
   const dashboard ({Key? key}) : super(key: key);
@@ -36,8 +37,9 @@ class dashboard extends StatelessWidget{
         child: Column(
           children: <Widget> [
             Container(
-              height: 100,
+              height:  MediaQuery.of(context).size.height * 0.15,
               width: MediaQuery.of(context).size.width / 2,
+              margin: EdgeInsets.only(top: 30, bottom: 10),
               decoration: BoxDecoration(
                boxShadow: [
                BoxShadow(
@@ -68,33 +70,17 @@ class dashboard extends StatelessWidget{
                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: 'David Libre',
                     color: Colors.black,
-                shadows: [
-                  Shadow( // bottomLeft
-                    offset: Offset(-1, -1),
-                    color: Colors.black
-                  ),
-                  Shadow( // bottomRight
-                    offset: Offset(1, -1),
-                    color: Colors.black
-                  ),
-                  Shadow( // topRight
-                    offset: Offset(1, 1),
-                    color: Colors.black
-                  ),
-                  Shadow( // topLeft
-                    offset: Offset(-1, 1),
-                    color: Colors.black
-                  ),
-                   ],),),],
+              ),),],
               ),),),
-              const SizedBox(
-              height: 50,
-              ),
+
+           
               Container(
-              height: 100,
+              height:  MediaQuery.of(context).size.height * 0.15,
               width: MediaQuery.of(context).size.width / 2,
+              margin: EdgeInsets.only(bottom: 10),
               decoration: BoxDecoration(
                boxShadow: [
                BoxShadow(
@@ -123,33 +109,14 @@ class dashboard extends StatelessWidget{
                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: 'David Libre',
                     color: Colors.black,
-                shadows: [
-                  Shadow( // bottomLeft
-                    offset: Offset(-1, -1),
-                    color: Colors.black
-                  ),
-                  Shadow( // bottomRight
-                    offset: Offset(1, -1),
-                    color: Colors.black
-                  ),
-                  Shadow( // topRight
-                    offset: Offset(1, 1),
-                    color: Colors.black
-                  ),
-                  Shadow( // topLeft
-                    offset: Offset(-1, 1),
-                    color: Colors.black
-                  ),
-                  ],),),],
+              ),),],
               ),),),
-              const SizedBox(
-              height: 50,
-              ),
-              
+
               Container(
-              height: 100,
+              height: MediaQuery.of(context).size.height *0.15,
               width: MediaQuery.of(context).size.width / 2,
               decoration: BoxDecoration(
                boxShadow: [
@@ -158,37 +125,34 @@ class dashboard extends StatelessWidget{
                 blurRadius: 30,
                 ),
                ],
+               
               color: Color.fromARGB(255, 253, 253, 253),
               border: Border.all(color: Color(0xff475BD8)),
               borderRadius: BorderRadius.circular(30)),
+              child : GestureDetector(
+                onTap: (){
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context){
+                        return PengirimanLaporan();
+                      },
+                      ),
+                  );
+                  
+                },   
               child: Column(
+              
               mainAxisAlignment: MainAxisAlignment.center,  
               children :<Widget>[
                   Text("Laporan Rutin",
                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: 'David Libre',
                     color: Colors.black,
-                shadows: [
-                  Shadow( // bottomLeft
-                    offset: Offset(-1, -1),
-                    color: Colors.black
-                  ),
-                  Shadow( // bottomRight
-                    offset: Offset(1, -1),
-                    color: Colors.black
-                  ),
-                  Shadow( // topRight
-                    offset: Offset(1, 1),
-                    color: Colors.black
-                  ),
-                  Shadow( // topLeft
-                    offset: Offset(-1, 1),
-                    color: Colors.black
-                  ),
-                ],),),],
-              ),),
+              ),),],
+              ),),),
               ],
             ),)
                   

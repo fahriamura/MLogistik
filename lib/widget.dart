@@ -71,16 +71,16 @@ Widget bottomAppBar(BuildContext context) {
   );
 }
 
-List<TableRow> createRows(List surat){
+List<TableRow> createRows(List surat, String row1, String row2, String row3){
   List<TableRow> table = [
     TableRow(children: [
       Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(vertical: 10),
         color : Color.fromARGB(255, 6, 29, 231),
         child: Column(
           children : [
             Text(
-              "Tanggal Pengajuan",
+              row1,
               style: TextStyle(
                 fontSize: 15
               ),
@@ -89,12 +89,12 @@ List<TableRow> createRows(List surat){
         )
       ),
       Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(vertical: 10),
         color : Color.fromARGB(255, 6, 29, 231),
         child: Column(
           children : [
             Text(
-              "Topik Surat Pengajuan",
+              row2,
               style: TextStyle(
                 fontSize: 15
               ),
@@ -103,12 +103,12 @@ List<TableRow> createRows(List surat){
         )
       ),
       Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(vertical: 10),
         color : Color.fromARGB(255, 6, 29, 231),
         child: Column(
           children : [
             Text(
-              "Status",
+              row3,
               style: TextStyle(
                 fontSize: 15
               ),
@@ -125,7 +125,7 @@ List<TableRow> createRows(List surat){
     for(int i = 0 ;i<2;i++){
       table.add(TableRow(children:[
         Container(
-          padding : const EdgeInsets.symmetric(horizontal: 10),
+          padding : const EdgeInsets.symmetric(vertical: 10),
           color: Color.fromARGB(255, 255, 255, 255),
           child : Column(
             children: [
@@ -136,7 +136,7 @@ List<TableRow> createRows(List surat){
           )
         ),
         Container(
-          padding : const EdgeInsets.symmetric(horizontal: 10),
+          padding : const EdgeInsets.symmetric(vertical: 10),
           color: Color.fromARGB(255, 255, 255, 255),
           child : Column(
             children: [
@@ -147,7 +147,7 @@ List<TableRow> createRows(List surat){
           )
         ),
         Container(
-          padding : const EdgeInsets.symmetric(horizontal: 10),
+          padding : const EdgeInsets.symmetric(vertical: 10),
           color: Color.fromARGB(255, 255, 255, 255),
           child : Column(
             children: [
