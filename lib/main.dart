@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:logistik/login.dart';
+import 'login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.blue,
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: LoginScreen(),
     );
   }
 }
-
